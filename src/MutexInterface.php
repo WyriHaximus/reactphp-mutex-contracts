@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WyriHaximus\React\Mutex;
+namespace WyriHaximus\React\Mutex\Contracts;
 
 use React\Promise\PromiseInterface;
 
