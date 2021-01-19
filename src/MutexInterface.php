@@ -17,5 +17,5 @@ interface MutexInterface
     /**
      * Release a previously acquired lock.
      */
-    public function release(Lock $lock): PromiseInterface;
+    public function release(LockInterface $lock): PromiseInterface;
 }
