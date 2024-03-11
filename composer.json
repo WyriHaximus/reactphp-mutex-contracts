@@ -7,7 +7,7 @@
         "react/promise": "^2.8 || ^3.0"
     },
     "require-dev": {
-        "wyrihaximus/async-test-utilities": "^3.3"
+        "wyrihaximus/async-test-utilities": "^3.3 || ^7.0"
     },
     "config": {
         "platform": {
