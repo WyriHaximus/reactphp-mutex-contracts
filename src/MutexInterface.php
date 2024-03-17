@@ -9,7 +9,7 @@ use React\Promise\PromiseInterface;
 interface MutexInterface
 {
     /**
-     * Acquire a mutex. Will resolve with either a Lock object or false when it can't acquire the lock because another
+     * Acquire a mutex. Will resolve with either a Lock object or null when it can't acquire the lock because another
      * requester already acquired it.
      *
      * @return PromiseInterface<?LockInterface>
@@ -17,8 +17,8 @@ interface MutexInterface
     public function acquire(string $key, float $ttl): PromiseInterface;
 
     /**
-     * Attempt to acquire a mutex for $attempts with a $interval second interval. Will resolve with either a Lock object or false when it can't acquire the lock because another
-     * requester already acquired it.
+     * Attempt to acquire a mutex for $attempts with a $interval second interval. Will resolve with either a Lock
+     * object or null when it can't acquire the lock because another requester already acquired it.
      *
      * @return PromiseInterface<?LockInterface>
      */
