@@ -4,10 +4,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "react/promise": "^2.8 || ^3.0"
+        "react/promise": "^3.1"
     },
     "require-dev": {
-        "wyrihaximus/async-test-utilities": "^7.1"
+        "wyrihaximus/async-test-utilities": "^7.3"
     },
     "autoload": {
         "psr-4": {

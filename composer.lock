@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6468c882d541750fad16d3b9a30eee9",
+    "content-hash": "788b2ae22dd4b0343c4048ed250da840",
     "packages": [
         {
             "name": "react/promise",
