@@ -6,6 +6,7 @@ namespace WyriHaximus\React\Mutex\Contracts;
 
 use React\Promise\PromiseInterface;
 
+/** @api */
 interface MutexInterface
 {
     /**

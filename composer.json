@@ -1,39 +1,48 @@
 {
-    "name": "wyrihaximus/react-mutex-contracts",
-    "description": "Mutex locking contracts for ReactPHP projects",
-    "license": "MIT",
-    "require": {
-        "php": "^8.2",
-        "react/promise": "^3.1"
-    },
-    "require-dev": {
-        "wyrihaximus/async-test-utilities": "^7.3 || ^8.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "WyriHaximus\\React\\Mutex\\Contracts\\": "src/"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "ergebnis/composer-normalize": true,
-            "icanhazstring/composer-unused": true,
-            "infection/extension-installer": true
-        },
-        "platform": {
-            "php": "8.2.13"
-        },
-        "sort-packages": true
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "composer normalize",
-            "composer update --lock --no-scripts"
-        ],
-        "post-update-cmd": [
-            "composer normalize",
-            "composer update --lock --no-scripts"
-        ]
+  "name": "wyrihaximus/react-mutex-contracts",
+  "description": "Mutex locking contracts for ReactPHP projects",
+  "license": "MIT",
+  "require": {
+    "php": "^8.4",
+    "react/promise": "^3.1"
+  },
+  "require-dev": {
+    "wyrihaximus/async-test-utilities": "^13.1.0",
+    "wyrihaximus/makefiles": "^0.11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "WyriHaximus\\React\\Mutex\\Contracts\\": "src/"
     }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "ergebnis/composer-normalize": true,
+      "icanhazstring/composer-unused": true,
+      "infection/extension-installer": true,
+      "phpstan/extension-installer": true,
+      "wyrihaximus/makefiles": true,
+      "wyrihaximus/test-utilities": true
+    },
+    "platform": {
+      "php": "8.4.13"
+    },
+    "sort-packages": true
+  },
+  "extra": {
+    "wyrihaximus": {
+      "supported-features": {
+        "unit-tests": false
+      }
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "make on-install-or-update || true"
+    ],
+    "post-update-cmd": [
+      "make on-install-or-update || true"
+    ]
+  }
 }
